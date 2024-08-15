@@ -36,7 +36,10 @@ import event21 from "../../public/images/Events/event21.jpg"
 import event22 from "../../public/images/Events/event22.jpg"
 import event23 from "../../public/images/Events/event23.jpg"
 import blender from "../../public/images/Events/blender.jpeg";
-
+import orientation1 from "../../public/images/Events/orientation1.jpg";
+import orientation2 from "../../public/images/Events/orientation2.jpg";
+import orientation3 from "../../public/images/Events/orientation3.jpg";
+import orientation4 from "../../public/images/Events/orientation4.jpg";
 // const FramerImage = motion(Image);
 
 const slideAnimation1 = (direction, duration) => ({
@@ -226,6 +229,22 @@ const events = () => {
                 link="/workshop"
                 sourceLink=""
                 button="Register Here"
+                source=""
+              />
+            </div>
+
+            <div className="col-span-12">
+              <FeaturedEvent
+                type=""
+                title="Orientation Session"
+                summary="The KXR Lab at BITS Pilani recently hosted an engaging orientation session for freshmen and sophomores. The event introduced students to the cutting-edge technologies and research opportunities in the fields of AR/VR and XR. The session included demonstrations, insights into ongoing projects, and guidance on how to get involved with the lab. It served as a platform to spark interest and encourage new members to explore the exciting possibilities within the KXR Lab."
+                img1={orientation2}
+                img2={orientation1}
+                img3={orientation3}
+                img4={orientation4}
+                link=""
+                sourceLink=""
+                button=""
                 source=""
               />
             </div>

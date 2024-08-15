@@ -289,28 +289,7 @@ const webTeam = [
     link: "https://github.com/hitanshchadha",
     image:HITANSH,
   },
-  // {
-  //   name: "Tanya Keshwani",
-  //   role: "Events Team",
-  //   linkedIn: "https://www.linkedin.com/in/tanya-keshwani-a98b39212/",
-  //   link: "https://github.com/taya12hu",
-  //   image:TANYA,
-  // },
-  // {
-  //   name: "Aditi Bansal",
-  //   role: "Events Team",
-  //   linkedIn: "https://www.linkedin.com/in/aditi-bansal-6995151bb/",
-  //   link: "https://github.com/aditibansall",
-  //   image:ADITI,
-  // },
-  // {
-  //   name: "Bala Avijit Chaturvedula",
-  //   role: "Events Team",
-  //   linkedIn: "https://www.linkedin.com/in/bala-avijit-chaturvedula-8773a1262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-  //   link: "",
-  //   image: BALA,
-
-  // },
+  
   {
     name: "Rudra Khaitan",
     role: "Events Team",
