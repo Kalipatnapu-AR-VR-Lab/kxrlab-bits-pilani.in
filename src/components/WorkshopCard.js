@@ -116,9 +116,9 @@ export default function WorkshopCard({ img1, img2, img3, team, sname1, sname2, s
                         </div>
                     </div>
                 </div>
-                <div className={styles.registerButton}>
+                {/* <div className={styles.registerButton}>
                     <a href={form} target="_blank">Register Here</a>
-                </div>
+                </div> */}
             </div>
         </div>
     );

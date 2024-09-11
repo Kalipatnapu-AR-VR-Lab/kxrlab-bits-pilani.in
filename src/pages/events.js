@@ -5,18 +5,18 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon, LinkedInIcon } from "@/components/Icons";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 import CustomLink from "@/components/Navbar";
 import { useRouter } from "next/router";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import styles from "../styles/events.module.css";
 
 // import required modules
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 import measuring from "../../public/images/projects/AR-tape-measurement.png";
 import { motion } from "framer-motion";
@@ -32,18 +32,27 @@ import drone from "../../public/images/projects/Drone.png";
 import navigation from "../../public/images/projects/Campus_Navigation.png";
 import { slideAnimation, HeadAnimation } from "@/components/motion";
 import event2 from "../../public/images/Events/event32.jpg";
-import event21 from "../../public/images/Events/event21.jpg"
-import event22 from "../../public/images/Events/event22.jpg"
-import event23 from "../../public/images/Events/event23.jpg"
-import blender from "../../public/images/Events/blender.jpeg";
+import event21 from "../../public/images/Events/event21.jpg";
+import event22 from "../../public/images/Events/event22.jpg";
+import event23 from "../../public/images/Events/event23.jpg";
+
 import orientation1 from "../../public/images/Events/orientation1.jpg";
 import orientation2 from "../../public/images/Events/orientation2.jpg";
 import orientation3 from "../../public/images/Events/orientation3.jpg";
 import orientation4 from "../../public/images/Events/orientation4.jpg";
-// const FramerImage = motion(Image);
+
+import blender1 from "../../public/images/Events/blender1.jpeg";
+import blender2 from "../../public/images/Events/blender2.jpeg";
+import blender3 from "../../public/images/Events/blender3.jpeg";
+
+import unity1 from "../../public/images/Events/unity1.jpeg";
+import unity2 from "../../public/images/Events/unity2.jpeg";
+import unity3 from "../../public/images/Events/unity3.jpeg";
+
+
 
 const slideAnimation1 = (direction, duration) => ({
-  initial: { opacity: 0, x: direction === 'left' ? -100 : 100 },
+  initial: { opacity: 0, x: direction === "left" ? -100 : 100 },
   animate: { opacity: 1, x: 0 },
   transition: { duration },
 });
@@ -69,10 +78,8 @@ const FeaturedEvent = ({
   return (
     <motion.article className="w-full flex justify-between items-center glassmorphism shadow-2xl p-12 relative lg:flex-col lg:p-8 xs:ronded-2xl xs:p-4 xs:w-[90%] m-0">
       <button
-        
         className="w-1/2 cursor-pointer overflow-hidden lg:w-full"
-        onClick={handleClick}
-        
+        // onClick={handleClick}
       >
         {/* <FramerImage
           src={img}
@@ -98,45 +105,66 @@ const FeaturedEvent = ({
           style={{
             "--swiper-pagination-color": "#fff",
             "--swiper-navigation-color": "#fff",
-          }} >
-          <SwiperSlide style={{ display: (img1 === null) ? "none" : null, transition: "ease-in-out" }}>
+          }}
+        >
+          <SwiperSlide
+            style={{
+              display: img1 === null ? "none" : null,
+              transition: "ease-in-out",
+            }}
+          >
             <motion.img
               src={img1.src}
               alt="img"
               className="w-full h-auto"
               priority
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-              {...slideAnimation1('left', 0.5)}
+              {...slideAnimation1("left", 0.5)}
             />
           </SwiperSlide>
-          <SwiperSlide style={{ display: (img2 === "null") ? "none" : null, transition: "ease-in-out" }}>
+          <SwiperSlide
+            style={{
+              display: img2 === "null" ? "none" : null,
+              transition: "ease-in-out",
+            }}
+          >
             <motion.img
               src={img2.src}
               alt="img"
               className="w-full h-auto"
               priority
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-              {...slideAnimation('left', 0.5)}
+              {...slideAnimation("left", 0.5)}
             />
           </SwiperSlide>
-          <SwiperSlide style={{ display: (img3 === "null") ? "none" : null, transition: "ease-in-out" }}>
+          <SwiperSlide
+            style={{
+              display: img3 === "null" ? "none" : null,
+              transition: "ease-in-out",
+            }}
+          >
             <motion.img
               src={img3.src}
               alt="img"
               className="w-full h-auto"
               priority
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-              {...slideAnimation1('left', 0.5)}
+              {...slideAnimation1("left", 0.5)}
             />
           </SwiperSlide>
-          <SwiperSlide style={{ display: (img4 === "null") ? "none" : null, transition: "ease-in-out" }}>
+          <SwiperSlide
+            style={{
+              display: img4 === "null" ? "none" : null,
+              transition: "ease-in-out",
+            }}
+          >
             <motion.img
               src={img4.src}
               alt="img"
               className="w-full h-auto"
               priority
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-              {...slideAnimation1('left', 0.5)}
+              {...slideAnimation1("left", 0.5)}
             />
           </SwiperSlide>
         </Swiper>
@@ -148,7 +176,7 @@ const FeaturedEvent = ({
         >
           {type}
         </motion.span>
-        <button  href={link} target="_blank">
+        <button href={link} target="_blank">
           <motion.h2
             className="my-2 w-full text-left text-4xl font-bold hover:underline hover:underline-offset-2"
             {...slideAnimation1("right", 0.5)}
@@ -217,7 +245,7 @@ const events = () => {
           />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-8">
-          <div className="col-span-12">
+            {/* <div className="col-span-12">
               <FeaturedEvent
                 type="Workshop"
                 title="Blender & Unity"
@@ -230,6 +258,38 @@ const events = () => {
                 sourceLink=""
                 button="Register Here"
                 source=""
+              />
+            </div> */}
+
+            <div className="col-span-12">
+              <FeaturedEvent
+                type="Workshop"
+                title="Blender"
+                summary="On August 25, 2024, KXR Lab proudly hosted a comprehensive workshop on Blender,powerful tool in ther world of XR.  Participants delved into the world of 3D modeling and animation, exploring Blender's powerful tools with a focus on creating immersive augmented and virtual reality experiences. The workshop provided hands-on training, covering everything from basic techniques to advanced applications, enabling attendees to enhance their AR/VR projects with cutting-edge skills and insights. Stay tuned for future events and workshops to continue advancing your creative journey with KXR Lab!"
+                img1={blender1}
+                img2={blender2}
+                img3={blender3}
+                img4="null"
+                link=""
+                sourceLink="https://www.linkedin.com/feed/update/urn:li:activity:7236009743088041984?utm_source=share&utm_medium=member_desktop"
+                button=""
+                source="linkedin"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <FeaturedEvent
+                type="Workshop"
+                title="Unity"
+                summary="On September 1, 2024, KXR Lab proudly hosted a comprehensive workshop on Unity. Attendees explored the dynamic features of Unity with a focus on creating immersive augmented and virtual reality experiences. The workshop offered practical, hands-on training in Unity's robust development environment, covering essential tools and techniques to bring AR/VR projects to life. From building interactive environments to optimizing performance, participants gained valuable insights and skills to elevate their creative projects. Keep an eye out for upcoming workshops and events at KXR Lab to continue expanding your expertise!"
+                img1={unity1}
+                img2={unity2}
+                img3={unity3}
+                img4="null"
+                link=""
+                sourceLink="https://www.linkedin.com/feed/update/urn:li:activity:7236009743088041984?utm_source=share&utm_medium=member_desktop"
+                button=""
+                source="linkedin"
               />
             </div>
 
@@ -248,7 +308,7 @@ const events = () => {
                 source=""
               />
             </div>
-            
+
             <div className="col-span-12">
               <FeaturedEvent
                 type="Talk Session"
