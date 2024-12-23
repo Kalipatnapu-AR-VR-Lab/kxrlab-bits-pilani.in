@@ -55,19 +55,19 @@ import HITANSH from "../../public/images/team/HITANSH.jpg";
 
 const coreTeam = [
   {
-    name: "Varun Sahni",
+    name: "Jay Agarwal",
     role: "President",
-    linkedIn: "http://www.linkedin.com/in/varun-sahni-profile/",
-    link: "https://github.com/varunsahni18",
-    image: VARUN_SAHNI,
+    linkedIn: "https://www.linkedin.com/in/jay-agarwal-86067427a/",
+    link: "https://github.com/JayAgarwal25",
+    image: JAY_AGARWAL,
   },
   {
-    name: "Aryan Bakshi",
+    name: "Ankur Basavarsu",
     role: "Coordinator",
-    linkedIn: "https://www.linkedin.com/in/aryan-bakshi-005b27222/",
-    link: "https://github.com/At0m0verr1de",
-    image: ARYAN_BAKSHI,
-  },
+    linkedIn: "https://www.linkedin.com/in/ankur-basavarsu-120649261",
+    link: "https://github.com/AnkurB24",
+    image: ANKUR,
+  }
 ];
 
 const projectTeam = [
@@ -80,13 +80,7 @@ const projectTeam = [
     image: ARYAN,
   },
   
-  {
-    name: "Ankur Basavarsu",
-    role: "Joint-Head (Development Team)",
-    linkedIn: "https://www.linkedin.com/in/ankur-basavarsu-120649261",
-    link: "https://github.com/AnkurB24",
-    image: ANKUR,
-  },
+  
 
   {
     name: "Siddharth Khemani ",
@@ -116,13 +110,7 @@ const projectTeam = [
     link: "https://github.com/ashish-sam",
     image: ASHISH,
   },
-  {
-    name: "Akshay Shukla",
-    role: "Development Team",
-    linkedIn: "https://www.linkedin.com/in/akshay-shukla-5a589b256/",
-    link: "https://github.com/Akshay1032",
-    image: AKSHAY,
-  },
+  
   {
     name: "Amrit Lahari",
     role: "Development Team",
@@ -156,13 +144,7 @@ const projectTeam = [
     image: SHUBHANG,
   },
  
-  {
-    name: "Jay Agarwal",
-    role: "Development Team",
-    linkedIn: "https://www.linkedin.com/in/jay-agarwal-86067427a/",
-    link: "https://github.com/JayAgarwal25",
-    image: JAY_AGARWAL,
-  },
+  
   
 
   {
@@ -182,13 +164,7 @@ const projectTeam = [
   },
 
 
-  {
-    name: "Praroop Garg",
-    role: "Development Team",
-    linkedIn: "https://www.linkedin.com/in/praroop-garg-742856252",
-    link: "https://github.com/slydite",
-    image: PRAROOP,
-  },
+  
  
 ];
 
@@ -217,13 +193,7 @@ const researchTeam = [
     link: "https://github.com/AS54321",
     image: AMRITPAL,
   },
-  {
-    name: "Aditya Mittal",
-    role: "Research Team",
-    linkedIn: "https://www.linkedin.com/in/adityamittal1000101",
-    link: "https://github.com/Elactix-Nova",
-    image: ADITYA,
-  },
+  
 
   {
     name: "Krish Bhatnagar",
@@ -239,13 +209,7 @@ const researchTeam = [
     link: "https://github.com/Ash0271",
     image: ANSHUMAN,
   },
-  {
-    name: "Dhyann Olemmyan",
-    role: "Research Team",
-    linkedIn: "",
-    link: "https://github.com/0lem1of1",
-    image: DHYANN,
-  },
+ 
 
   {
     name: "Neha Gujjari",
@@ -256,21 +220,8 @@ const researchTeam = [
   },
    
 
-  {
-    name: "Siddhant Mishra",
-    role: "Research Team",
-    linkedIn: "https://www.linkedin.com/in/siddhant-mishra-407b222a4",
-    link: "https://github.com/Sid2818",
-    image: SIDDHANT,
-  },
+  
  
-  {
-    name: "Aviral Gupta",
-    role: "Research Team",
-    linkedIn: "https://www.linkedin.com/in/aviral-gupta-690309169/",
-    link: "http://github.com/aviral2004",
-    image: AVIRAL_GUPTA,
-  },
   
 ];
 
@@ -433,7 +384,7 @@ const contact = () => {
           </div>
 
           <AnimatedText
-            text="EVENTS Team"
+            text="Management Team"
             className="my-16 !text-6xl sm:!text-4xl xs:!text-4xl sm:mb-8 "
           />
           <div className="grid grid-cols-5 items-center gap-4 gap-y-10 justify-center md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
